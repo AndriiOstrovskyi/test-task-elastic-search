@@ -62,13 +62,6 @@
     ]
 }
 ```
-## 2. Як ви реалізуєте наповнення ElasticSearch для фільтрації каталогу?
-
-Для наповнення ElasticSearch даними з каталогу товарів, можна створити спеціальний метод у контролері, який буде відповідати за індексацію продуктів та їх варіацій у ElasticSearch. Цей метод буде брати дані з бази даних та відправляти їх до ElasticSearch.
-
-Приклад методу ./app/Http/Controllers/ProductController.php indexElasticSearch
-Також було створено ./app/Services/ElasticSearchService.php для роботи з ElasticSearch
-Була використана бібліотека elasticsearch/elasticsearch для роботи з ElasticSearch
 
 ## 2. Наповнення ElasticSearch для фільтрації каталогу
 
